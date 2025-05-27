@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>個人履歷網頁</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .bg-lite-gray {
+      background-color: #495057;
+    }
+    .bg-pink{
+        background-color: #ff61f4;
+    }
+    .bg-red{
+        background-color: #ff4800;
+    }
+    .bg-blue{
+        background-color: #2fa5ff;
+    }
+    .bg-orange{
+        background-color: #ff8b3e;
+    }
+    .bg-purple{
+        background-color: #883eff;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .progress {
+      height: 1.25rem;
+    }
+    .timeline-icon {
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+    .timeline-item {
+      margin-bottom: 1.5rem;
+    }
+    .card-icon {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-lite-gray sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">かすみ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">關於我</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">技能</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">作品集</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">經歷</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">聯絡我</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 個人簡介 -->
+<section id="about" class="py-5 bg-white text-center">
+  <div class="container ">
+    <img src="https://dcimg1.dcinside.com/viewimage.php?id=7cef832ff3d7&no=24b0d769e1d32ca73fe982fa11d0283196af1a5a1a0ccbfb9e99ea6089bd26d9a87faade20a3016417b101d89f6c855cb95944225917da56019632bc73fac67e3b871856dfda4c4c6754a5e26fcd53c8aa8303bb4fb0cc9f4ea5f01833ec92a081&orgExt" class="rounded-circle mb-3" alt="頭像">
+    <h2>Kasumi Yue</h2>
+    <p class="lead">全端基礎 | 往雲端工程師努力</p>
+  </div>
+</section>
+
+<!-- 技能區 - 進度條 -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="section-title text-center">技能親近度</h3>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label>HTML / CSS</label>
+        <div class="progress">
+          <div class="progress-bar bg-primary" style="width: 0%" data-value="70">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>JavaScript</label>
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width: 0%" data-value="70">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Linux</label>
+        <div class="progress">
+          <div class="progress-bar bg-pink" style="width: 0%" data-value="70">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Bootstrap</label>
+        <div class="progress">
+          <div class="progress-bar bg-purple" style="width: 0%" data-value="80">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>DataBase</label>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 0%" data-value="70">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Java</label>
+        <div class="progress">
+          <div class="progress-bar bg-orange" style="width: 0%" data-value="80">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>Python</label>
+        <div class="progress">
+          <div class="progress-bar bg-red" style="width: 0%" data-value="70">0%</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label>C</label>
+        <div class="progress">
+          <div class="progress-bar bg-blue" style="width: 0%" data-value="80">0%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 技能區 - 卡片呈現 -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h3 class="section-title text-center">專業領域</h3>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <div class="card-icon mb-3"><i class="bi bi-code-slash"></i></div>
+            <h5 class="card-title">前端技能</h5>
+            <p class="card-text">HTML, CSS, JavaScript 常用前端基礎。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <div class="card-icon mb-3"><i class="bi bi-hdd-network"></i></div>
+            <h5 class="card-title">後端技能</h5>
+            <p class="card-text">Python、Java、C、MariaDB 等後端語言與資料基礎操作。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <div class="card-icon mb-3"><i class="bi bi-bootstrap"></i></div>
+            <h5 class="card-title">Bootstrap</h5>
+            <p class="card-text">Bootstrap 5 響應式設計技巧與元件使用。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body">
+            <div class="card-icon mb-3"><i class="bi bi-cloud"></i></div>
+            <h5 class="card-title">雲端技能</h5>
+            <p class="card-text">基本了解AWS功能，Ubuntu Server、Linux操作，並學習Docker、Kubernets</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 作品集 -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="section-title text-center">作品集</h3>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">作品一</h5>
+            <p class="card-text">前端互動式網頁設計專案。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">作品二</h5>
+            <p class="card-text">Bootstrap 響應式網站範例。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">作品三</h5>
+            <p class="card-text">Linux 主機部署與後端開發。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 經歷 / 教育背景 -->
+<section id="experience" class="py-5 bg-white">
+  <div class="container">
+    <h3 class="section-title text-center">學經歷</h3>
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <h5><i class="bi bi-briefcase timeline-icon"></i>參訓經歷</h5>
+        <div class="timeline-item">
+          <p class="mb-1 fw-bold">全端工程師 - 產業新尖兵</p>
+          <small class="text-muted">2025.04 - 現在</small>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <h5><i class="bi bi-mortarboard timeline-icon"></i>教育背景</h5>
+        <div class="timeline-item">
+          <p class="mb-1 fw-bold ">資訊管理學系 - 淡江大學</p>
+          <small class="text-muted">2018 - 2022</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 聯絡表單 -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="section-title text-center">聯絡我</h3>
+    <div class="row">
+      <div class="col-md-6 mb-4 text-center">
+        <h5><i class="bi bi-envelope-at-fill"></i> Email</h5>
+        <p>kasumihime0230@gmail.com</p>
+        <h5><i class="bi bi-telephone-fill"></i> 電話</h5>
+        <p>+886 968-XXX-XXX</p>
+        <h5><i class="bi bi-geo-alt-fill"></i> 地點</h5>
+        <p>台北市信義區</p>
+      </div>
+      <div class="col-md-6 ">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">姓名</label>
+            <input type="text" class="form-control" id="name" placeholder="輸入您的姓名">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">電子郵件</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">留言</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="請輸入訊息..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送出</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript 技能動畫效果 -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function animateProgressBar(bar){
+      const target = parseInt(bar.getAttribute('data-value'));
+      let current = 0;
+      const interval = setInterval(() => {
+        if (current < target) {
+          current++;
+          bar.style.width = current + '%';
+          bar.textContent = current + '%';
+        } else {
+          clearInterval(interval);
+        }
+      }, 15);
+    }
+
+    const observerOptions = {
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver (entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bars = entry.target.querySelectorAll('.progress-bar');
+          bars.forEach(bar => {
+            if  (!bar.dataset.animated){
+              animateProgressBar(bar);
+              bar.dataset.animated = true; // 確保只動畫一次
+            }
+          });
+          observer.unobserve(entry.target); // 停止觀察
+        }
+      });
+    }, observerOptions);
+
+    const skillsSection = document.querySelector('#skills');
+    if(skillsSection){
+      observer.observe(skillsSection);
+    }
+  });
+</script>
+
+<!-- 頁尾 -->
+<footer class="bg-lite-gray text-white text-center py-3">
+  <div class="container">
+    <small>© 2025 My resume test, reserved all right</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
